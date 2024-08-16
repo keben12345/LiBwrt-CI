@@ -20,20 +20,20 @@ UPDATE_PACKAGE() {
 	fi
 }
 
-UPDATE_PACKAGE "design" "gngpp/luci-theme-design" "$([[ $WRT_URL == *"lede"* ]] && echo "main" || echo "js")"
-UPDATE_PACKAGE "design-config" "gngpp/luci-app-design-config" "master"
+#UPDATE_PACKAGE "design" "gngpp/luci-theme-design" "$([[ $WRT_URL == *"lede"* ]] && echo "main" || echo "js")"
+#UPDATE_PACKAGE "design-config" "gngpp/luci-app-design-config" "master"
 UPDATE_PACKAGE "argon" "jerrykuku/luci-theme-argon" "$([[ $WRT_URL == *"lede"* ]] && echo "18.06" || echo "master")"
 UPDATE_PACKAGE "argon-config" "jerrykuku/luci-app-argon-config" "$([[ $WRT_URL == *"lede"* ]] && echo "18.06" || echo "master")"
 
-UPDATE_PACKAGE "helloworld" "fw876/helloworld" "master"
-UPDATE_PACKAGE "mihomo" "morytyann/OpenWrt-mihomo" "main"
-UPDATE_PACKAGE "openclash" "vernesong/OpenClash" "dev"
-UPDATE_PACKAGE "neko" "nosignals/neko" "luci-app-neko"
+#UPDATE_PACKAGE "helloworld" "fw876/helloworld" "master"
+#UPDATE_PACKAGE "mihomo" "morytyann/OpenWrt-mihomo" "main"
+#UPDATE_PACKAGE "openclash" "vernesong/OpenClash" "dev"
+#UPDATE_PACKAGE "neko" "nosignals/neko" "luci-app-neko"
 
-UPDATE_PACKAGE "gecoosac" "lwb1978/openwrt-gecoosac" "main"
-UPDATE_PACKAGE "tinyfilemanager" "muink/luci-app-tinyfilemanager" "master"
+#UPDATE_PACKAGE "gecoosac" "lwb1978/openwrt-gecoosac" "main"
+#UPDATE_PACKAGE "tinyfilemanager" "muink/luci-app-tinyfilemanager" "master"
 
-if [[ $WRT_URL != *"lede"* ]]; then
+if [[ $WRT_URL == *"lede"* ]]; then
 	UPDATE_PACKAGE "homeproxy" "immortalwrt/homeproxy" "dev"
 fi
 
@@ -69,16 +69,16 @@ UPDATE_VERSION() {
 }
 
 #UPDATE_VERSION "软件包名" "项目地址" "测试版true（可选，默认为否）"
-UPDATE_VERSION "brook" "txthinking/brook"
-UPDATE_VERSION "dns2tcp" "zfl9/dns2tcp"
-UPDATE_VERSION "hysteria" "apernet/hysteria"
-UPDATE_VERSION "ipt2socks" "zfl9/ipt2socks"
-UPDATE_VERSION "microsocks" "rofl0r/microsocks"
-UPDATE_VERSION "naiveproxy" "klzgrad/naiveproxy"
-UPDATE_VERSION "sing-box" "SagerNet/sing-box" "true"
-UPDATE_VERSION "trojan-go" "p4gefau1t/trojan-go"
-UPDATE_VERSION "trojan" "trojan-gfw/trojan"
-UPDATE_VERSION "v2ray-core" "v2fly/v2ray-core"
-UPDATE_VERSION "v2ray-plugin" "teddysun/v2ray-plugin"
-UPDATE_VERSION "xray-core" "XTLS/Xray-core"
-UPDATE_VERSION "xray-plugin" "teddysun/xray-plugin"
+#UPDATE_VERSION "brook" "txthinking/brook"
+#UPDATE_VERSION "dns2tcp" "zfl9/dns2tcp"
+#UPDATE_VERSION "hysteria" "apernet/hysteria"
+#UPDATE_VERSION "ipt2socks" "zfl9/ipt2socks"
+#UPDATE_VERSION "microsocks" "rofl0r/microsocks"
+#UPDATE_VERSION "naiveproxy" "klzgrad/naiveproxy"
+#UPDATE_VERSION "sing-box" "SagerNet/sing-box" "true"
+#UPDATE_VERSION "trojan-go" "p4gefau1t/trojan-go"
+#UPDATE_VERSION "trojan" "trojan-gfw/trojan"
+#UPDATE_VERSION "v2ray-core" "v2fly/v2ray-core"
+#UPDATE_VERSION "v2ray-plugin" "teddysun/v2ray-plugin"
+#UPDATE_VERSION "xray-core" "XTLS/Xray-core"
+#UPDATE_VERSION "xray-plugin" "teddysun/xray-plugin"
