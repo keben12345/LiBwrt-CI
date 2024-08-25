@@ -27,8 +27,10 @@ jobs:
       max-parallel: 3
       matrix:
         TARGET: [Qualcom]
+        #SOURCE: [King-Of-Knights/openwrt-6.x]
         SOURCE: [363137946/openwrt-6.x]
         include:
+          #- SOURCE: King-Of-Knights/openwrt-6.x
           - SOURCE: 363137946/openwrt-6.x
             BRANCH: main
             THEME: argon
